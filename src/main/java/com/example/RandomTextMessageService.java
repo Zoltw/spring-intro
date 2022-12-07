@@ -1,10 +1,12 @@
 package com.example;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-
+@Component("RandomMessageService") // dzieki temu te same hashe
 public class RandomTextMessageService implements MessageService {
     List<String> messages = new ArrayList<>(Arrays.asList(
             "to0", "to1", "to2", "to3", "to4", "to5", "to6",
